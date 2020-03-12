@@ -1,0 +1,133 @@
+.main {
+  background: #fff;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-left {
+  width: 50%;
+}
+
+.section-right {
+  width: 50%;
+}
+
+.content-left-scrool {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-right-scrool {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content-left {
+  width: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-header-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 64px;
+  padding-left: 142px;
+  padding-right: 128px;
+}
+
+.main-header-left__log {
+  width: 77px;
+}
+
+.logo {
+  height: 100%;
+}
+
+.main-header-left__search {
+  width: 180px;
+  min-height: 24px;
+}
+
+.search__input {
+  width: 116px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.search__input_description {
+  font-size: 14px;
+  color: #242635;
+  text-transform: uppercase;
+  border: none;
+}
+
+.search__button {
+  width: 24px;
+  height: 24px;
+  background: url(./assets/img/Icon.png) no-repeat 50% 50%;
+  border: none;
+}
+
+.main-left-content {
+  height: 648px;
+}
+
+.main-text-left {
+  padding: 122px 128px 108px 142px;
+}
+
+.main-text-left__header-text {
+  font-size: 85px;
+  font-weight: 500;
+  line-height: 90px;
+  color: #242635;
+}
+
+.main-text-left__text-description {
+  margin-top: 40px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #64667a;
+}
+
+.main-footer-left {
+  background: #242635;
+  height: 162px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-footer-left__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.footer-image__icon {
+  width: 48px;
+}
+.content-right {
+  width: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-right-content {
+  height: 648px;
+  background: url(./assets/img/dose-juice-aZChFcYAp7k-unsplash.png) 100% 100%
+    no-repeat;
+  background-size: auto;
+}
+
+.main-footer-right {
+  height: 162px;
+}

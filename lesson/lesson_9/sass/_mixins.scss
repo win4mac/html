@@ -1,0 +1,28 @@
+@mixin conteiner {
+  width: 100%;
+  padding: 0 1rem;
+  max-width: calc(1400px + 2rem);
+  margin: 0 auto;
+}
+
+@mixin normalizeImage {
+  width: 100%;
+  & > img {
+    width: 100%;
+    display: block;
+  }
+}
+
+@mixin header {
+  margin: 35px 0 15px 15px;
+}
+
+@mixin header_text {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+@mixin footer_title_text {
+  font-size: 1.1rem;
+  font-weight: 600;
+}

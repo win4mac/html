@@ -1,0 +1,152 @@
+.page-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  max-width: 2200px;
+  margin: 0 auto;
+}
+
+.col {
+  width: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.block {
+}
+
+.block_top {
+  flex-grow: 1;
+}
+
+.block_bottom {
+  flex-grow: 0;
+  height: 162px;
+}
+
+.image {
+  width: 100%;
+  display: block;
+  background-image: url('./assets/images/dose-juice-aZChFcYAp7k-unsplash@2x.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+
+.logo {
+  width: 77px;
+}
+
+.logo > img {
+  width: 100%;
+  display: block;
+}
+
+.description {
+  margin-top: 122px;
+}
+
+.description__head {
+  font-size: 85px;
+}
+
+.description__text {
+  font-size: 20px;
+  line-height: 30px;
+  color: #64667a;
+  margin-top: 40px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-field {
+  border: none;
+  height: 25px;
+  width: 180px;
+  display: block;
+  position: relative;
+  padding-right: 25px;
+}
+
+.field-label {
+  position: relative;
+  display: block;
+}
+
+.field-label:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  background-image: url('./assets/images/Icon@2x.png');
+  background-size: contain;
+  background-position: center;
+}
+
+.search-field::placeholder {
+  color: #000;
+}
+
+.col_left .block_bottom {
+  background: #242635;
+}
+/* TABLET */
+@media screen and (max-width: 991px) {
+  .page-container {
+    flex-wrap: wrap;
+    max-width: 800px;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .block_bottom {
+    display: none;
+  }
+
+  .image {
+    background-image: url('./assets/images/dose-juice-aZChFcYAp7k-unsplash.png');
+    background-size: cover;
+    background-position: right bottom;
+    min-height: 500px;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 767px) {
+  .page-container {
+    flex-wrap: wrap;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .block_bottom {
+    display: none;
+  }
+
+  .image {
+    background-image: url('./assets/images/dose-juice-aZChFcYAp7k-unsplash.png');
+    background-size: cover;
+    background-position: right bottom;
+  }
+}

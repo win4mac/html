@@ -1,0 +1,146 @@
+@import "./mixins";
+
+$spacing: 8px;
+
+.global-content {
+  @include conteiner;
+  position: relative;
+}
+
+.promotions {
+  padding: $spacing;
+  &__item {
+    padding: $spacing;
+  }
+}
+
+.becoms {
+  padding: $spacing;
+  &__item {
+    padding: $spacing;
+  }
+}
+
+.becom {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  &_view {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    border-radius: 12px;
+    border-width: 1px;
+  }
+  &__header {
+    margin: 35px 0 15px 15px;
+  }
+  &__header_text {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  &__image {
+    @include normalizeImage;
+  }
+  &__content {
+    margin: $spacing;
+  }
+  &__content_description {
+    padding-left: 2 * $spacing;
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
+//
+.favorite {
+  min-height: 200px;
+  width: 100%;
+  position: relative;
+  &__image {
+    overflow: hidden;
+    border-radius: 10px;
+    @include normalizeImage;
+  }
+  &__image-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  &__header {
+    margin: 35px 0 15px 15px;
+  }
+  &__header_text {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  &__content {
+    margin-top: $spacing;
+  }
+  &__description {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: rgb(72, 72, 72);
+  }
+  &__option {
+    font-size: 0.8rem;
+    color: rgb(145, 70, 105);
+  }
+  &__link {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+//
+
+.promotion {
+  min-height: 200px;
+  width: 100%;
+  position: relative;
+  &__image {
+    overflow: hidden;
+    border-radius: 10px;
+    @include normalizeImage;
+  }
+  &__header {
+    @include header;
+  }
+  &__header_text {
+    @include header_text;
+  }
+
+  &__content {
+    margin-top: $spacing;
+  }
+  &__description {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__country {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  &__title {
+    margin-top: $spacing;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  &__link {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+}

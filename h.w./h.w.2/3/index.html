@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Календарь</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            }
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            }
+        body {
+            background-color: #50e3c2;
+            }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        body{
+            margin: 0px;
+            }
+        th{
+            padding: 13px 0;
+            font-weight: normal;
+            }
+        td{
+            padding: 15px 10px 15px 10px;
+            }
+        .container {
+            width: 343px;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px 0 rgba(208, 208, 208, 0.5);
+            border: solid 1px #dfe4ef;
+            margin: 67px auto;
+            background-color: #fff ;
+            text-align: center;
+            padding: 16px 14px 16px 14px;
+            }
+        .p-header{
+            color: #2c3135;
+            font-size: 16px;
+            }
+        .table{
+            width: 100%;
+            margin-top: 20px;
+            }
+        .name-month{
+            text-align: center;
+            font-size: 12px;
+            color: #7f8fa4;
+            }
+        .date-disable{
+            font-size: 12px;
+            border-radius: 2px;
+            color: #bac2c7;
+            background-color:#edf2f5;
+            }
+        .date-current{
+            font-size: 12px;
+            border-radius: 2px;
+            color: #fff;
+            background-color:#50e3c2;
+            }
+        .date-other{
+            font-size: 12px;
+            border-radius: 2px;
+            color: #2c3135;
+            }
+        .btn-config{
+            width: 57px;
+            height: 21px;
+            font-size: 10px;
+            border-radius: 2px;
+            border: solid 1px #fff;
+            background-color: #fff;
+            color: #2c3135;
+            margin: 23px 45px 0px 45px;
+            }     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="p-header">August 2017</p>
+        <table class="table">
+            <tr class="name-month">
+                <th>SU</th>
+                <th>M</th>
+                <th>TU</th>
+                <th>W</th>
+                <th>TH</th>
+                <th>F</th>
+                <th>SA</th>
+            </tr>
+            <tr class="date-other">
+                <td class="date-disable">30</td>
+                <td class="date-disable">31</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr class="date-other">
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr class="date-other">
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td class="date-current">17</td>
+                <td>18</td>
+                <td>19</td>
+            </tr>
+            <tr class="date-other">
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+            </tr>
+            <tr class="date-other">
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+                <td class="date-disable">1</td>
+                <td class="date-disable">2</td>
+            </tr>
+        </table>
+       <button class="btn-config">CANCEL</button>
+       <button class="btn-config">OK</button>
+    </div>
+</body>
+</html>

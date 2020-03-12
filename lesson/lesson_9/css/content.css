@@ -1,0 +1,157 @@
+.global-content {
+  width: 100%;
+  padding: 0 1rem;
+  max-width: calc(1400px + 2rem);
+  margin: 0 auto;
+  position: relative;
+}
+
+.promotions {
+  padding: 8px;
+}
+.promotions__item {
+  padding: 8px;
+}
+
+.becoms {
+  padding: 8px;
+}
+.becoms__item {
+  padding: 8px;
+}
+
+.becom {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.becom_view {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  border-radius: 12px;
+  border-width: 1px;
+}
+.becom__header {
+  margin: 35px 0 15px 15px;
+}
+.becom__header_text {
+  font-size: 22px;
+  font-weight: 600;
+}
+.becom__image {
+  width: 100%;
+}
+.becom__image > img {
+  width: 100%;
+  display: block;
+}
+.becom__content {
+  margin: 8px;
+}
+.becom__content_description {
+  padding-left: 16px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.favorite {
+  min-height: 200px;
+  width: 100%;
+  position: relative;
+}
+.favorite__image {
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+}
+.favorite__image > img {
+  width: 100%;
+  display: block;
+}
+.favorite__image-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.favorite__header {
+  margin: 35px 0 15px 15px;
+}
+.favorite__header_text {
+  font-size: 22px;
+  font-weight: 600;
+}
+.favorite__content {
+  margin-top: 8px;
+}
+.favorite__description {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: #484848;
+}
+.favorite__option {
+  font-size: 0.8rem;
+  color: #914669;
+}
+.favorite__link {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.promotion {
+  min-height: 200px;
+  width: 100%;
+  position: relative;
+}
+.promotion__image {
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+}
+.promotion__image > img {
+  width: 100%;
+  display: block;
+}
+.promotion__header {
+  margin: 35px 0 15px 15px;
+}
+.promotion__header_text {
+  font-size: 22px;
+  font-weight: 600;
+}
+.promotion__content {
+  margin-top: 8px;
+}
+.promotion__description {
+  display: flex;
+  justify-content: space-between;
+}
+.promotion__country {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.promotion__title {
+  margin-top: 8px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.promotion__link {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=content.css.map */

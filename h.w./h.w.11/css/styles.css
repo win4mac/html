@@ -1,0 +1,22 @@
+.container {
+  margin: 0auto;
+  padding-top: 55px;
+  text-align: center;
+}
+
+.hw11-button {
+  background: red;
+  border-radius: 8px;
+  width: 96px;
+  height: 48px;
+  color: #fff;
+  font-weight: 900;
+  outline: none;
+}
+
+.hw11-div {
+  margin: 24px;
+  color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */

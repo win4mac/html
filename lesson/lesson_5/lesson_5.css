@@ -1,0 +1,177 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+}
+
+.item {
+  background: #33cccc;
+  width: 50%;
+  justify-content: flex-end;
+  display: flex;
+  position: relative;
+}
+
+.item-content {
+  width: 100%;
+  max-width: 720px;
+  height: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  align-content: space-between;
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 10px;
+  color: #fff;
+}
+
+.item-content > * {
+  width: 100%;
+}
+
+.item-light {
+  background: #fff;
+  justify-content: flex-start;
+}
+
+.header > .logo {
+  width: 100%;
+  max-width: 250px;
+}
+
+.text-block {
+  position: relative;
+}
+
+.text-block-header {
+  font-size: 42px;
+}
+
+.text-block-description {
+  margin-top: 20px;
+}
+
+.phone-wrapper {
+  margin-top: 50px;
+}
+
+.phone-number {
+  width: 286px;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 2px;
+  border: none;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  max-width: 150px;
+}
+
+.socials > img {
+  width: 20px;
+  display: block;
+}
+
+.copyrights {
+  margin-top: 20px;
+}
+
+.close-btn {
+  width: 26px;
+  background: none;
+  border: none;
+}
+
+.close-btn > img {
+  width: 100%;
+}
+
+.item-light .header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-social {
+  width: 300px;
+  height: 62px;
+  border-radius: 2px;
+  border: none;
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+  color: #fff;
+  outline: none;
+}
+
+.btn-social:first-child {
+  margin-top: 0;
+}
+
+.btn-social > img {
+  position: absolute;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn-social.twitter {
+  background: #55acee;
+}
+
+.btn-social.facebook {
+  background: #3b5999;
+}
+
+.btn-social.email {
+  background: #33cccc;
+}
+
+.social-actions-footer {
+  margin-top: 50px;
+  color: #54595f;
+}
+
+.social-actions-footer > a {
+  color: #33cccc;
+}
+
+.footer-link {
+  color: #54595f;
+  text-align: center;
+}
+
+.footer-link > a {
+  color: #33cccc;
+}
+
+.watermark {
+  position: absolute;
+  z-index: 0;
+}
+
+.watermark:first-of-type {
+  right: -19px;
+  top: -208px;
+}
+
+.watermark:last-of-type {
+  left: -157px;
+  bottom: -304px;
+}

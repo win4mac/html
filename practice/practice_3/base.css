@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 25px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  font-size: 1rem;
+}
+
+.content-wrapper {
+  width: 100%;
+  padding: 0 1rem;
+  max-width: calc(1220px + 2rem);
+  margin: 0 auto;
+}

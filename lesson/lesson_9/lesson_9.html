@@ -1,0 +1,467 @@
+<!DOCTYPE html
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 9 - сайт AIRBNB.RU</title>
+    <link rel="stylesheet" href="./css/grid.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/content.css" />
+    <link rel="stylesheet" href="./css/searchouse.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <section class="page-head container">
+      <header class="global-menu" id="menu">
+        <div class="bottom-text">
+            <a class="bottom-text___link"  href="#">
+              <span class="bottom-text__span">
+                Более 300 вариантов уникального жилья в Орегоне
+              </span>
+            </a>
+        </div>
+        <button class="global-menu__toggle" id="btn">
+          <figure class="logo">
+            <svg
+              viewBox="0 0 1000 1000"
+              role="presentation"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z"
+              ></path>
+            </svg>
+          </figure>
+        </button>
+       
+        <nav class="global-menu__nav nav">
+          <a href="" class="nav__link">Become a host</a>
+          <a href="" class="nav__link">Saved</a>
+          <a href="" class="nav__link">Tips</a>
+          <a href="" class="nav__link">Messages</a>
+          <a href="" class="nav__link nav__link_help">Help</a>
+        </nav>
+      </header>
+
+
+
+      <div class="house-search">
+        <div class="house-search__container">
+          <div class="house-search__header s-header">
+            <h1 class="s-header__text text-bold">
+              Бронируйте уникальное 
+              <a class="s-header__link" href="#"> жилье</a> и Впечатления
+            </h1>
+          </div>
+          <div class="form-search-wrapper">
+            <form class="search-form-house">
+              <div class=" title-search-where">Где</div>
+                <input type="text" class="search-text-input search-text-input_size search-text-input__description " placeholder="Где угодно">
+              <div class="search-data-container grid-container">
+              <div class="title-data-search text-bold col-6">Прибытие</div>
+              <div class="title-data-search text-bold col-6">Выезд</div>
+                <input type="text" class="search-text-input search-text-input__description col-6" placeholder="дд.мм.гггг">
+                <input type="text" class="search-text-input search-text-input__description col-6" placeholder="дд.мм.гггг">
+                <div class=" title-select-guests">Гости</div>
+                <select name="select-guests" id="guests" class="search-text-input search-text-input_size " placeholder="Гости">
+                  <option class="search-text-input__description" value="" >Гости</option>
+                  <option class="search-text-input__description" value="" >Взрослые</option>
+                  <option class="search-text-input__description" value="" >Дети</option>
+                  <option class="search-text-input__description" value="" >Малденцы</option>
+                  <option class="search-text-input__description" value="" >Гости</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="button-container">
+            <button class="button-search btn" type="submit">
+              <span class="btn__name">Начать поиск</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <main class="page-main">
+      <div class="global-content">
+      <div class="becoms">
+        <div class="becom__header">
+          <h4 class="becom__header_text">
+            Познакомьтесь с Airbnb
+          </h4>
+        </div>
+        <div class="becom__content grid-container">
+          <div class="col-4 col-md-4 col-sm-4 col-xs-4 becoms__item">
+            <div class="becom becom_view">
+              <a href="#" class="promotion__link"></a>
+              <div class="col-5 col-md-12 col-sm-12">
+                <div class="becom__image">
+                  <img src="./assets/images/becom.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-7 col-md-12 col-sm-12"> 
+                <div class="becom__content">
+                  <h4 class="becom__content_description">Жилье</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-4 col-sm-4 col-xs-4 becoms__item">
+            <div class="becom becom_view">
+              <a href="#" class="promotion__link"></a>
+              <div class="col-5 col-md-12 col-sm-12">
+                <div class="becom__image">
+                  <img src="./assets/images/becom_3.webp" alt="">
+                </div>
+              </div>
+              <div class="col-7 col-md-12 col-sm-12"> 
+                <div class="becom__content">
+                  <h4 class="becom__content_description">Жилье</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-4 col-sm-4 col-xs-4 becoms__item">
+            <div class="becom becom_view">
+              <a href="#" class="promotion__link"></a>
+              <div class="col-5 col-md-12 col-sm-12">
+                <div class="becom__image">
+                  <img src="./assets/images/becom_2.webp" alt="">
+                </div>
+              </div>
+              <div class="col-7 col-md-12 col-sm-12"> 
+                <div class="becom__content">
+                  <h4 class="becom__content_description">Жилье</h4>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+<!-- Block favorites -->
+      <div class=" promotions">
+        <div class="favorite__header">
+          <h4 class="favorite__header_text">Избранные направления Airbnb Plus</h4>
+            <span>Посмотрите красивое жилье со всеми удобствами дома и не только.</span>
+        </div>
+        <div class="favorite__content grid-container">
+          <div class="col-4 col-md-4 col-sm-6 col-xs-12 promotions__item">
+            <div class="favorite">
+              <a class="favorite__link" href="#"></a>
+                <div class="favorite__image">
+                  <span class="favorite__image-text">Мельбурн</span>
+                  <img src="./assets/images/favor.jpg" alt="">
+                </div>
+                <div class="favorite__content">
+                  <div class="favorite__title">
+                    <span class="favorite__option text-bold">
+                      ВАРИАНТОВ ПРОВЕРЕННОГО ЖИЛЬЯ: БОЛЕЕ 680
+                    </span>
+                  </div>
+                </div> 
+                <div class="favorite__description">
+                  <span class="text-bold">Остановитесь в жилье, проверенном на качество и
+                    дизайн, чтобы лучше познакомиться состаринным китайским портом, переживающим стремительный рост.</span>
+                </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-4 col-sm-6 col-xs-12 promotions__item">
+            <div class="favorite">
+              <a class="favorite__link" href="#"></a>
+                <div class="favorite__image">
+                  <span class="favorite__image-text">Лондон</span>
+                  <img src="./assets/images/favor_1.jpg" alt="">
+                </div>
+                <div class="favorite__content">
+                  <div class="favorite__title">
+                    <span class="favorite__option text-bold">
+                      ВАРИАНТОВ ПРОВЕРЕННОГО ЖИЛЬЯ: БОЛЕЕ 680
+                    </span>
+                  </div>
+                </div> 
+                <div class="favorite__description">
+                  <span class="text-bold">Остановитесь в жилье, проверенном на качество и
+                    дизайн, чтобы лучше познакомиться состаринным китайским портом, переживающим стремительный рост.</span>
+                </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-4 col-sm-6 col-xs-12 promotions__item">
+            <div class="favorite">
+              <a class="favorite__link" href="#"></a>
+                <div class="favorite__image">
+                  <span class="favorite__image-text">Кейптаун</span>
+                  <img src="./assets/images/favor_3.jpg" alt="">
+                </div>
+                <div class="favorite__content">
+                  <div class="favorite__title">
+                    <span class="favorite__option text-bold">
+                      ВАРИАНТОВ ПРОВЕРЕННОГО ЖИЛЬЯ: БОЛЕЕ 680
+                    </span>
+                  </div>
+                </div> 
+                <div class="favorite__description">
+                  <span class="text-bold">Остановитесь в жилье, проверенном на качество и
+                    дизайн, чтобы лучше познакомиться состаринным китайским портом, переживающим стремительный рост.</span>
+                </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+<!-- Block favorites END-->
+      <div class="promotions ">
+        <div class="promotion__header">
+          <h4 class="promotion__header_text">Жилье по всему миру</h4>
+        </div>
+        <div class="promotion__content grid-container">
+          <div class="col-3 col-md-6 col-sm-6 col-xs-12 promotions__item">
+            <div class="promotion">
+              <a class="promotion__link" href="#"></a>
+              <div class="promotion__image">
+                <img src="./assets/images/b41736ff_original.webp" alt="">
+              </div>
+              <div class="promotion__content">
+                <div class="promotion__description">
+                  <h4 class="promotion__country">
+                    France
+                  </h4>
+                  <div class="promotion__rating">4.5</div>
+                </div>
+                <h3 class="promotion__title">
+                  CHARMING HOUSE Seaside& Pine Forest
+                </h3>
+              </div>
+              <div class="promotion__footer">
+                <div class="promotion__price">
+                  <span class="text-bold">$156</span> / night
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 col-md-6 col-sm-6 col-xs-12 promotions__item">
+            <div class="promotion">
+              <a class="promotion__link" href="#"></a>
+              <div class="promotion__image">
+                <img src="./assets/images/b41736ff_original.webp" alt="">
+              </div>
+              <div class="promotion__content">
+                <div class="promotion__description">
+                  <h4 class="promotion__country">
+                    France
+                  </h4>
+                  <div class="promotion__rating">4.5</div>
+                </div>
+                <h3 class="promotion__title">
+                  CHARMING HOUSE Seaside& Pine Forest
+                </h3>
+              </div>
+              <div class="promotion__footer">
+                <div class="promotion__price">
+                  <span class="text-bold">$156</span> / night
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 col-md-6 col-sm-6 col-xs-12 promotions__item">
+            <div class="promotion">
+              <a class="promotion__link" href="#"></a>
+              <div class="promotion__image">
+                <img src="./assets/images/b41736ff_original.webp" alt="">
+              </div>
+              <div class="promotion__content">
+                <div class="promotion__description">
+                  <h4 class="promotion__country">
+                    France
+                  </h4>
+                  <div class="promotion__rating">4.5</div>
+                </div>
+                <h3 class="promotion__title">
+                  CHARMING HOUSE Seaside& Pine Forest
+                </h3>
+              </div>
+              <div class="promotion__footer">
+                <div class="promotion__price">
+                  <span class="text-bold">$156</span> / night
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 col-md-6 col-sm-6 col-xs-12 promotions__item">
+            <div class="promotion">
+              <a class="promotion__link" href="#"></a>
+              <div class="promotion__image">
+                <img src="./assets/images/b41736ff_original.webp" alt="">
+              </div>
+              <div class="promotion__content">
+                <div class="promotion__description">
+                  <h4 class="promotion__country">
+                    France
+                  </h4>
+                  <div class="promotion__rating">4.5</div>
+                </div>
+                <h3 class="promotion__title">
+                  CHARMING HOUSE Seaside& Pine Forest
+                </h3>
+              </div>
+              <div class="promotion__footer">
+                <div class="promotion__price">
+                  <span class="text-bold">$156</span> / night
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END ROW 1 -->
+          <div class="col-3 col-md-6 col-sm-6 col-xs-12 promotions__item">
+            <div class="promotion">
+              <a class="promotion__link" href="#"></a>
+              <div class="promotion__image">
+                <img src="./assets/images/b41736ff_original.webp" alt="">
+              </div>
+              <div class="promotion__content">
+                <div class="promotion__description">
+                  <h4 class="promotion__country">
+                    France
+                  </h4>
+                  <div class="promotion__rating">4.5</div>
+                </div>
+                <h3 class="promotion__title">
+                  CHARMING HOUSE Seaside& Pine Forest
+                </h3>
+              </div>
+              <div class="promotion__footer">
+                <div class="promotion__price">
+                  <span class="text-bold">$156</span> / night
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 col-md-6 col-sm-6 col-xs-12 promotions__item">
+            <div class="promotion">
+              <a class="promotion__link" href="#"></a>
+              <div class="promotion__image">
+                <img src="./assets/images/b41736ff_original.webp" alt="">
+              </div>
+              <div class="promotion__content">
+                <div class="promotion__description">
+                  <h4 class="promotion__country">
+                    France
+                  </h4>
+                  <div class="promotion__rating">4.5</div>
+                </div>
+                <h3 class="promotion__title">
+                  CHARMING HOUSE Seaside& Pine Forest
+                </h3>
+              </div>
+              <div class="promotion__footer">
+                <div class="promotion__price">
+                  <span class="text-bold">$156</span> / night
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 col-md-6 col-sm-6 col-xs-12 promotions__item">
+            <div class="promotion">
+              <a class="promotion__link" href="#"></a>
+              <div class="promotion__image">
+                <img src="./assets/images/b41736ff_original.webp" alt="">
+              </div>
+              <div class="promotion__content">
+                <div class="promotion__description">
+                  <h4 class="promotion__country">
+                    France
+                  </h4>
+                  <div class="promotion__rating">4.5</div>
+                </div>
+                <h3 class="promotion__title">
+                  CHARMING HOUSE Seaside& Pine Forest
+                </h3>
+              </div>
+              <div class="promotion__footer">
+                <div class="promotion__price">
+                  <span class="text-bold">$156</span> / night
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 col-md-6 col-sm-6 col-xs-12 promotions__item">
+            <div class="promotion">
+              <a class="promotion__link" href="#"></a>
+              <div class="promotion__image">
+                <img src="./assets/images/b41736ff_original.webp" alt="">
+              </div>
+              <div class="promotion__content">
+                <div class="promotion__description">
+                  <h4 class="promotion__country">
+                    France
+                  </h4>
+                  <div class="promotion__rating">4.5</div>
+                </div>
+                <h3 class="promotion__title">
+                  CHARMING HOUSE Seaside& Pine Forest
+                </h3>
+              </div>
+              <div class="promotion__footer">
+                <div class="promotion__price">
+                  <span class="text-bold">$156</span> / night
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </main>
+    <footer  class="footer-content footer">
+      <div class="footer-list">
+        <section class="footer-columns">
+          <h1 class="footer-columns__title header-text">О нас</h1>
+          <ul class="footer-colums__list grid-container__footer">
+            <li class="footer-columns__list_li col-footer-sm-4">Личностное многообразие и принятие</li>
+            <li class="footer-columns__list_li col-footer-sm-4">Доступность</li>
+            <li class="footer-columns__list_li col-footer-sm-4">Доверие и безопасность</li>
+            <li class="footer-columns__list_li col-footer-sm-4">Airbnb Citizen</li>
+            <li class="footer-columns__list_li col-footer-sm-4">Пресс-центр</li>
+          </ul>
+        </section>
+        <section class="footer-columns">
+          <h1 class="footer-columns__title">Сообщество</h1>
+          <ul class="footer-colums__list grid-container__footer">
+            <li class="footer-columns__list_li col-footer-sm-4">Личностное многообразие и принятие</li>
+            <li class="footer-columns__list_li col-footer-sm-4">Доступность</li>
+            <li class="footer-columns__list_li col-footer-sm-4">Доверие и безопасность</li>
+            <li class="footer-columns__list_li col-footer-sm-4">Airbnb Citizen</li>
+            <li class="footer-columns__list_li col-footer-sm-4">Пресс-центр</li>
+          </ul>
+        </section>
+        <section class="footer-columns">
+          <h1 class="footer-columns__title">Хозяин/огранизатор</h1>
+          <ul class="footer-colums__list grid-container__footer">
+            <li class="footer-columns__list_li col-footer-sm-4">Личностное многообразие и принятие</li>
+            <li class="footer-columns__list_li col-footer-sm-4">Доступность</li>
+            <li class="footer-columns__list_li col-footer-sm-4">Доверие и безопасность</li>
+            <li class="footer-columns__list_li col-footer-sm-4">Airbnb Citizen</li>
+            <li class="footer-columns__list_li col-footer-sm-4">Пресс-центр</li>
+          </ul>
+        </section>
+        <section class="footer-columns">
+          <h1 class="footer-columns__title">Поддержка</h1>
+          <ul class="footer-colums__list grid-container__footer">
+            <li class="footer-columns__list_li col-footer-sm-4">Доступность</li>
+            <li class="footer-columns__list_li col-footer-sm-4">Личностное многообразие и принятие</li>
+            <li class="footer-columns__list_li col-footer-sm-4">Доверие и безопасность</li>
+            <li class="footer-columns__list_li col-footer-sm-4">Airbnb Citizen</li>
+            <li class="footer-columns__list_li col-footer-sm-4">Пресс-центр</li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+    <script>
+      btn.onclick = function() {
+        menu.classList.toggle('global-menu_active');
+      };
+    </script>
+  </body>
+</html>

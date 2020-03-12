@@ -1,0 +1,68 @@
+@import "./mixins";
+
+$spacing: 8px;
+$spacing_old: 0.8rem;
+
+.footer-content {
+  @include conteiner;
+  position: relative;
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 2 * $spacing;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.footer-columns {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  &__title {
+    @include footer_title_text;
+    padding-bottom: $spacing;
+  }
+  &__list {
+    &_li {
+      margin-top: 2 * $spacing;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 2 * $spacing;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  }
+
+  .footer-columns {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    &__title {
+      @include footer_title_text;
+      padding-bottom: $spacing;
+      padding-left: $spacing_old;
+    }
+    &__list {
+      &_li {
+        margin-top: 2 * $spacing;
+        font-size: 0.9rem;
+        padding-right: $spacing_old;
+        padding-left: $spacing_old;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+}

@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  display: inline-block;
+  position: relative;
+}
+
+image {
+  width: 100%;
+}
+
+.image:nth-child(2),
+.image:nth-child(3),
+.image:nth-child(4),
+.image:nth-child(5) {
+  animation-name: rotation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.image:nth-child(1) {
+  width: 100%;
+}
+
+.image:nth-child(2) {
+  position: absolute;
+  top: 550px;
+  left: 360px;
+}
+.image:nth-child(3) {
+  position: absolute;
+  top: 90px;
+  right: 420px;
+}
+.image:nth-child(4) {
+  position: absolute;
+  top: 596px;
+  right: 327px;
+}
+.image:nth-child(5) {
+  position: absolute;
+  top: 146px;
+  left: 356px;
+}
+
+.text-block {
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-block > h1 {
+  font-size: 90px;
+  text-transform: uppercase;
+}
+
+.text-block > p {
+  font-size: 19px;
+  padding-top: 61px;
+}
+
+.btn-notify {
+  width: 268px;
+  height: 57px;
+  background: #47fcc0;
+  color: #fff;
+  font-size: 22px;
+  margin-top: 20px;
+  user-select: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer {
+  background: #fff;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.footer > p {
+  font-size: 18px;
+  padding-bottom: 20px;
+}

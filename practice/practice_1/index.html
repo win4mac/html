@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    html{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+    body{
+        background-color: #253e52;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    body{
+        margin: 0px;
+    }
+    .container{
+        width: 470px;
+        min-height: 80px;
+        margin: 40px auto;
+        background-color: #ffffff;
+        padding: 48px;
+        text-align: center;
+        color: #325e82;
+        border-radius: 2px;
+        box-shadow: 0 0 10px 0 rgba(63, 78, 90, 0.11);
+    }
+    .header{
+        margin: 0px;
+        font-size: 16px;
+    }
+    .browsers{
+        width: 100%;
+    }
+    .description,
+    .browsers{
+        margin-top: 20px;
+    }
+    .btn-config{
+        width: 104px;
+        height: 32px;
+        border-radius: 2px;
+        border: solid 1px #25a0d4;
+        background-color: #25a0d4;
+        color: #fff;
+        font-weight: bold;
+        margin-top: 45px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="header">You seem to be using an unsupported browser</h2>
+        <p class="description">
+            To get the most out of using the new Return Path 
+            please login to the new experience with a supported
+            browser.
+        </p>
+            <table class="browsers">
+                <tr>
+                    <td>
+                        <img src="./pic/ie.png" alt="">
+                    </td>
+                    <td>
+                        <img src="./pic/chrome.png" alt="">
+                    </td>
+                    <td>
+                        <img src="./pic/fox.png" alt="">
+                    </td>
+                    <td>
+                        <img src="./pic/ios.png" alt="">
+                    </td>
+                    <td>
+                        <img src="./pic/opera.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>IE</td>
+                    <td>Chrome</td>
+                    <td>Firefox</td>
+                    <td>Safari</td>
+                    <td>Opera</td>
+                </tr>
+            </table>
+            <button class="btn-config">GOT IT</button>
+    </div>
+</body>
+</html>

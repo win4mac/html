@@ -1,0 +1,130 @@
+$cel-count: 12;
+$cell-size: 100% / 12;
+
+$screen-lg: 1200px;
+$screen-md: 992px;
+$screen-sm: 768px;
+$screen-xs: 576px;
+
+.grid-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  &__footer {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+[class*="col-"] {
+}
+
+@for $index from 1 to $cel-count + 1 {
+  .col-#{$index} {
+    width: $cell-size * $index;
+  }
+  .col-offset-#{$index} {
+    margin-left: $cell-size * $index;
+  }
+}
+
+@media (max-width: $screen-lg - 1px) {
+  @for $index from 1 to $cel-count + 1 {
+    .col-lg-#{$index} {
+      width: $cell-size * $index;
+    }
+    .col-lg-offset-#{$index} {
+      margin-left: $cell-size * $index;
+    }
+  }
+}
+
+@media (max-width: $screen-md - 1px) {
+  @for $index from 1 to $cel-count + 1 {
+    .col-md-#{$index} {
+      width: $cell-size * $index;
+    }
+    .col-md-offset-#{$index} {
+      margin-left: $cell-size * $index;
+    }
+  }
+}
+
+@media (max-width: 768px - 1px) {
+  @for $index from 1 to $cel-count + 1 {
+    .col-sm-#{$index} {
+      width: $cell-size * $index;
+    }
+    .col-sm-offset-#{$index} {
+      margin-left: $cell-size * $index;
+    }
+  }
+}
+
+@media (max-width: 576px - 1px) {
+  @for $index from 1 to $cel-count + 1 {
+    .col-xs-#{$index} {
+      width: $cell-size * $index;
+    }
+    .col-xs-offset-#{$index} {
+      margin-left: $cell-size * $index;
+    }
+  }
+}
+
+[class*="col-footer"] {
+}
+
+@for $index from 1 to $cel-count + 1 {
+  .col-footer-#{$index} {
+    width: $cell-size * $index;
+  }
+  .col-footer-offset-#{$index} {
+    margin-left: $cell-size * $index;
+  }
+}
+
+@media (max-width: $screen-lg - 1px) {
+  @for $index from 1 to $cel-count + 1 {
+    .col-footer-lg-#{$index} {
+      width: $cell-size * $index;
+    }
+    .col-footer-lg-offset-#{$index} {
+      margin-left: $cell-size * $index;
+    }
+  }
+}
+
+@media (max-width: $screen-md - 1px) {
+  @for $index from 1 to $cel-count + 1 {
+    .col-footer-md-#{$index} {
+      width: $cell-size * $index;
+    }
+    .col-footer-md-offset-#{$index} {
+      margin-left: $cell-size * $index;
+    }
+  }
+}
+
+@media (max-width: 768px - 1px) {
+  @for $index from 1 to $cel-count + 1 {
+    .col-footer-sm-#{$index} {
+      width: $cell-size * $index;
+    }
+    .col-footer-sm-offset-#{$index} {
+      margin-left: $cell-size * $index;
+    }
+  }
+}
+
+@media (max-width: 576px - 1px) {
+  @for $index from 1 to $cel-count + 1 {
+    .col-footer-xs-#{$index} {
+      width: $cell-size * $index;
+    }
+    .col-footer-xs-offset-#{$index} {
+      margin-left: $cell-size * $index;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson_11</title>
+  </head>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <body>
+    <div class="sign-in-form">
+      <h3 class="form-header">SIGN IN TO YOUR ACCOUNT</h3>
+      <input
+        class="form-field name-field"
+        type="text"
+        value="Test"
+        onkeypress="clearNameError()"
+        placeholder="my@email.com"
+      />
+      <div class="name-field-error"></div>
+      <input
+        class="form-field password-field"
+        type="password"
+        onkeypress="clearPasswordError()"
+        value="test"
+        placeholder="*******"
+      />
+      <div class="password-field-error"></div>
+      <button onclick="showPassword()">SHOW PASSWORD</button>
+      <button class="submit-btn" onclick="logIn()">Sign In</button>
+    </div>
+    <div class="content"></div>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
