@@ -24,13 +24,11 @@
 // }
 
 const light = document.querySelectorAll(".lighter__light");
-
 function disableAll() {
   for (let i = 0; i < light.length; i++) {
     light[i].classList.remove("active");
   }
 }
-
 function selectColor(button) {
   disableAll();
   button.classList.add("active");
