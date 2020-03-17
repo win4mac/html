@@ -1,26 +1,35 @@
-var argumentArray = [36325, 9824, 777];
-const styleResult_1 = document.querySelector(".result-1");
-const styleResult_2 = document.querySelector(".result-2");
-const styleArray = document.querySelector(".array");
-
 function add(arg_1, arg_2) {
   var result = arg_1 + arg_2;
   return result;
 }
-
 function multiply(arg_3, arg_4) {
   var result = arg_3 * arg_4;
   return result;
 }
+
+const styleResult_1 = document.querySelector(".result-1");
+const styleResult_2 = document.querySelector(".result-2");
+const styleArray = document.querySelector(".array");
+var argumentArray = [36325, 9824, 777];
 const argument1 = argumentArray[0];
 const argument2 = argumentArray[1];
 const argument3 = argumentArray[2];
 
 function mathCalc(button) {
   styleResult_1.textContent =
-    "Результат умножения: " + multiply(argument1, argument2);
+    "Результат умножения " +
+    argument1 +
+    " на " +
+    argument2 +
+    " равен: " +
+    multiply(argument1, argument2);
   styleResult_2.textContent =
-    "Результат сложения: " + add(multiply(argument1, argument2), argument3);
+    "Результат сложения " +
+    multiply(argument1, argument2) +
+    " и " +
+    argument3 +
+    " равен: " +
+    add(multiply(argument1, argument2), argument3);
 }
 
 var arrayNumb1 = [1, 2, 3];
@@ -71,7 +80,7 @@ function areArraysSame(ar1, ar2) {
       " равны"
     );
   } else {
-    return "Длина массивов " + ar1 + " и " + ar2 + " не одинаковые";
+    return "Длина массивов " + ar1 + " и " + ar2 + " не одинаковая";
   }
 }
 
