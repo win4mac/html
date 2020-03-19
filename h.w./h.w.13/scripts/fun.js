@@ -21,6 +21,8 @@ function checkEnter() {
   }
   answerForm.innerHTML =
     answerForm.innerHTML + addComment(valueName, valueComment);
+  inputName.value = "";
+  inputComment.value = "";
 }
 
 function addComment(value1, value2) {
