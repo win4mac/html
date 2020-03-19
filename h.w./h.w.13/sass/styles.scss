@@ -1,0 +1,97 @@
+@import "./mixins";
+
+:root {
+  --size-from-style: 340px;
+  --size-form-border-radius: 9px;
+}
+
+.container {
+  background: grey;
+  width: 100%;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment {
+  margin: 0 auto;
+  margin-top: 15px;
+  width: var(--size-from-style);
+}
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 45px;
+}
+
+.form-view {
+  padding: 9px 17px 18px;
+  border-radius: 9px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+}
+.form-input {
+  margin-top: 5px;
+  background: #f1f1f1;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: #747474;
+  &__name {
+    height: 25px;
+    @include formelementstyle;
+    &.error {
+      border: 1px solid red;
+    }
+    &:focus {
+      border: 1px solid #0073dd;
+    }
+  }
+  &__comment {
+    height: 106px;
+    resize: none;
+    @include formelementstyle;
+    &.error {
+      border: 1px solid red;
+    }
+    &:focus {
+      border: 1px solid #0073dd;
+    }
+  }
+}
+
+.btn {
+  margin-top: 15px;
+}
+.btn-view {
+  height: 25px;
+  @include formelementstyle;
+  background-color: #65a8b1;
+  color: #fff;
+}
+
+.answer {
+  margin: 0 auto;
+  &__form {
+    margin-top: 13px;
+    width: var(--size-from-style);
+    height: 140px;
+    border-radius: var(--size-form-border-radius);
+    border: 1px solid #d9d9d9;
+    background: #fff;
+  }
+  &__view {
+    padding: 12px 18px 9px 10px;
+    @include answerfontstyle;
+    position: relative;
+    &_name {
+      position: absolute;
+      right: 21px;
+      bottom: 19px;
+      font-size: 0.9rem;
+      color: #747474;
+    }
+    &_text {
+      font-size: 0.9rem;
+    }
+  }
+}

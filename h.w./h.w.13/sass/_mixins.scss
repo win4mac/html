@@ -1,0 +1,12 @@
+@mixin formelementstyle {
+  width: 305px;
+  border-radius: 5px;
+  border-width: 0;
+  outline: none;
+}
+
+@mixin answerfontstyle {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: #464646;
+}
