@@ -1,7 +1,7 @@
 @import "./mixins";
 
 :root {
-  --size-from-style: 340px;
+  --size-form-style: 340px;
   --size-form-border-radius: 9px;
 }
 
@@ -16,7 +16,7 @@
 .comment {
   margin: 0 auto;
   margin-top: 15px;
-  width: var(--size-from-style);
+  width: var(--size-form-style);
 }
 .comment-form {
   display: flex;
@@ -73,7 +73,7 @@
   margin: 0 auto;
   &__form {
     margin-top: 13px;
-    width: var(--size-from-style);
+    width: var(--size-form-style);
     height: 140px;
     border-radius: var(--size-form-border-radius);
     border: 1px solid #d9d9d9;

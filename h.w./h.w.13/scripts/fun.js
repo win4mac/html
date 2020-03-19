@@ -8,7 +8,6 @@ addBtn.addEventListener("click", checkEnter);
 function checkEnter() {
   const valueName = inputName.value;
   const valueComment = inputComment.value;
-
   if (!valueName) {
     inputName.classList.add("error");
     return;
@@ -20,7 +19,6 @@ function checkEnter() {
     }
     inputComment.classList.remove("error");
   }
-
   answerForm.innerHTML =
     answerForm.innerHTML + addComment(valueName, valueComment);
 }
