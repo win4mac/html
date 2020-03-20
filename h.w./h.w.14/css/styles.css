@@ -1,0 +1,15 @@
+.lamp {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.lamp__color {
+  background-color: white;
+}
+
+.container {
+  margin: 8px;
+}
+
+/*# sourceMappingURL=styles.css.map */

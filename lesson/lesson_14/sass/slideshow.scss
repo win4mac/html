@@ -1,0 +1,33 @@
+.slideshow {
+  width: 600px;
+  margin: 150px auto;
+  &__slides {
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  &__slide {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    &:nth-child(2) {
+      transform: translateX(-100%);
+    }
+    &:nth-child(3) {
+      transform: translateX(-200%);
+    }
+    &.animate {
+      transition: all 0.2s;
+    }
+    &.slide_active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  &__frame {
+    width: 100%;
+    display: block;
+  }
+}
