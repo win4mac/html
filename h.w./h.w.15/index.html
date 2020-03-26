@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Гонки</title>
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script>
+      var Car = function(x, y) {
+        this.x = x;
+        this.y = y;
+        // this.speed = this.speed();
+        this.draw();
+        this.needForSpeed();
+      };
+
+      Car.prototype.draw = function() {
+        var carHtml = '<img src="./assets/images/twitter.png">';
+        this.carElement = $(carHtml);
+        this.carElement.css({
+          position: "absolute",
+          left: this.x,
+          top: this.y
+        });
+        $("body").append(this.carElement);
+      };
+
+      Car.prototype.moveRight = function() {
+        this.x += this.speed();
+        this.carElement.css({
+          position: "absolute",
+          left: this.x,
+          top: this.y
+        });
+      };
+
+      Car.prototype.moveLeft = function() {
+        this.x -= this.speed;
+        this.carElement.css({
+          position: "absolute",
+          left: this.x,
+          top: this.y
+        });
+      };
+
+      Car.prototype.moveUp = function() {
+        this.y -= 5;
+        this.carElement.css({
+          position: "absolute",
+          left: this.x,
+          top: this.y
+        });
+      };
+
+      Car.prototype.moveDown = function() {
+        this.y += 5;
+        this.carElement.css({
+          position: "absolute",
+          left: this.x,
+          top: this.y
+        });
+      };
+
+      Car.prototype.needForSpeed = function() {
+        let timerId = setInterval(() => this.moveRight(), 100);
+        setTimeout(() => {
+          clearInterval(timerId);
+          this.moveRight();
+        }, 12000);
+      };
+
+      Car.prototype.speed = function() {
+        let random = Math.floor(Math.random() * 10);
+        return random;
+      };
+
+      var tesla = new Car(20, 20);
+      var nissan = new Car(20, 200);
+
+      tesla.needForSpeed();
+      nissan.needForSpeed();
+
+      // // tesla.draw();
+      // nissan.draw();
+    </script>
+  </body>
+</html>
