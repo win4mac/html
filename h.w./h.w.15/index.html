@@ -11,7 +11,6 @@
       var Car = function(x, y) {
         this.x = x;
         this.y = y;
-        // this.speed = this.speed();
         this.draw();
         this.needForSpeed();
       };
@@ -37,7 +36,7 @@
       };
 
       Car.prototype.moveLeft = function() {
-        this.x -= this.speed;
+        this.x -= this.speed();
         this.carElement.css({
           position: "absolute",
           left: this.x,
@@ -46,7 +45,7 @@
       };
 
       Car.prototype.moveUp = function() {
-        this.y -= 5;
+        this.y -= this.speed();
         this.carElement.css({
           position: "absolute",
           left: this.x,
@@ -55,7 +54,7 @@
       };
 
       Car.prototype.moveDown = function() {
-        this.y += 5;
+        this.y += this.speed();
         this.carElement.css({
           position: "absolute",
           left: this.x,
@@ -81,9 +80,6 @@
 
       tesla.needForSpeed();
       nissan.needForSpeed();
-
-      // // tesla.draw();
-      // nissan.draw();
     </script>
   </body>
 </html>
