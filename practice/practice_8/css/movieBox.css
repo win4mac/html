@@ -1,0 +1,31 @@
+.movie-box {
+  width: 400px;
+  margin: 150px auto;
+  position: relative;
+}
+.movie-box__slides {
+  width: 100%;
+  display: flex;
+  position: relative;
+  border: 5px solid red;
+}
+.movie-box__slide {
+  width: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+.movie-box__slide.animate {
+  transition: all 0.2s;
+}
+.movie-box__slide.slide_active {
+  visibility: visible;
+  opacity: 1;
+}
+.movie-box__frame {
+  width: 100%;
+  display: block;
+}
+
+/*# sourceMappingURL=movieBox.css.map */

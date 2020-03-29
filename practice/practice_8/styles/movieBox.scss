@@ -1,0 +1,29 @@
+.movie-box {
+  width: 400px;
+  margin: 150px auto;
+  position: relative;
+  &__slides {
+    width: 100%;
+    display: flex;
+    position: relative;
+    border: 5px solid red;
+  }
+  &__slide {
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    visibility: hidden;
+    opacity: 0;
+    &.animate {
+      transition: all 0.2s;
+    }
+    &.slide_active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  &__frame {
+    width: 100%;
+    display: block;
+  }
+}
