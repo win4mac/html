@@ -1,0 +1,12 @@
+.sign-up-form {
+  max-width: 450px;
+  margin: 0 auto;
+}
+.sign-up-form__input {
+  width: 100%;
+}
+.sign-up-form__button {
+  width: 100%;
+}
+
+/*# sourceMappingURL=signUpForm.css.map */

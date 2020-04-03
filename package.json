@@ -1,0 +1,23 @@
+{
+  "name": "group2801",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1 ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/win4mac/html.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/win4mac/html/issues"
+  },
+  "homepage": "https://github.com/win4mac/html#readme",
+  "devDependencies": {
+    "http-server": "^0.12.1",
+    "sass": "^1.26.3"
+  }
+}

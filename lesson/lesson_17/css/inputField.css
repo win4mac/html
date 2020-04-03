@@ -1,0 +1,23 @@
+.input-field {
+  min-width: 300px;
+  box-sizing: border-box;
+  display: inline-block;
+  padding-bottom: 20px;
+  position: relative;
+}
+.input-field > * {
+  display: block;
+}
+.input-field__input {
+  background: #efefef;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.input-field__error {
+  position: absolute;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=inputField.css.map */

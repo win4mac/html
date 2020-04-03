@@ -1,0 +1,14 @@
+.sign-in-form {
+  max-width: 450px;
+  margin: 0 auto;
+}
+.sign-in-form__input {
+  width: 100%;
+}
+.sign-in-form__button {
+  width: 100%;
+  background: khaki;
+  border-radius: 9px;
+}
+
+/*# sourceMappingURL=signInForm.css.map */

@@ -1,0 +1,12 @@
+.sign-in-form {
+  max-width: 450px;
+  margin: 0 auto;
+  &__input {
+    width: 100%;
+  }
+  &__button {
+    width: 100%;
+    background: khaki;
+    border-radius: 9px;
+  }
+}

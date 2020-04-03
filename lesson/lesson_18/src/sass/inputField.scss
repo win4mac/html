@@ -1,0 +1,21 @@
+.input-field {
+  min-width: 300px;
+  box-sizing: border-box;
+  display: inline-block;
+  padding-bottom: 20px;
+  position: relative;
+  > * {
+    display: block;
+  }
+  &__input {
+    background: #efefef;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 15px;
+  }
+  &__error {
+    position: absolute;
+    bottom: 0;
+  }
+}
